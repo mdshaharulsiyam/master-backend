@@ -1,0 +1,16 @@
+2024-12-27 15:59:49 [ERROR]: ValidationError: verification validation failed: code: email is required
+    at model.Document.invalidate (D:\backend\maid\node_modules\mongoose\lib\document.js:3331:32)
+    at D:\backend\maid\node_modules\mongoose\lib\document.js:3092:17
+    at D:\backend\maid\node_modules\mongoose\lib\schemaType.js:1407:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-12-27 17:44:50 [ERROR]: Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:655:11)
+    at ServerResponse.header (D:\backend\maid\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (D:\backend\maid\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (D:\backend\maid\node_modules\express\lib\response.js:278:15)
+    at ServerResponse.send (D:\backend\maid\node_modules\express\lib\response.js:162:21)
+    at handleDevError (D:\backend\maid\src\utils\globalErrorHandler.ts:17:34)
+    at globalErrorHandler (D:\backend\maid\src\utils\globalErrorHandler.ts:74:9)
+    at D:\backend\maid\src\middleware\asyncWrapper.ts:9:31
+    at Generator.throw (<anonymous>)
+    at rejected (D:\backend\maid\src\middleware\asyncWrapper.ts:6:65)
