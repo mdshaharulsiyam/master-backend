@@ -6323,3 +6323,278 @@ src/Apis/Auth/authControllers.ts(19,9): error TS1109: Expression expected.
     at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1288:32)
     at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-28 10:34:10 [ERROR]: D:\backend\maid\src\Apis\Verification\verificationController.ts:30
+            const req;
+                  ^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-31041286356827325.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-31041286356827325.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-31041286356827325.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-28 12:07:44 [ERROR]: TypeError: app.use() requires a middleware function
+    at Function.use (D:\backend\maid\node_modules\express\lib\application.js:217:11)
+    at routeMiddleware (D:\backend\maid\src\middleware\routeMiddleware.ts:11:9)
+    at Object.<anonymous> (D:\backend\maid\src\index.ts:29:16)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-31041286356827325.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-31041286356827325.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-31041286356827325.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+2024-12-28 12:07:46 [ERROR]: TypeError: app.use() requires a middleware function
+    at Function.use (D:\backend\maid\node_modules\express\lib\application.js:217:11)
+    at routeMiddleware (D:\backend\maid\src\middleware\routeMiddleware.ts:11:9)
+    at Object.<anonymous> (D:\backend\maid\src\index.ts:29:16)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-31041286356827325.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-31041286356827325.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-31041286356827325.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+2024-12-28 12:32:10 [ERROR]: Error: listen EADDRINUSE: address already in use 192.168.10.25:5001
+    at Server.setupListenHandle [as _listen2] (node:net:1904:16)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2024-12-28 12:32:41 [ERROR]: Error: listen EADDRINUSE: address already in use 192.168.10.25:5001
+    at Server.setupListenHandle [as _listen2] (node:net:1904:16)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2024-12-28 12:33:22 [ERROR]: Error: listen EADDRINUSE: address already in use 192.168.10.25:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1904:16)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2024-12-28 12:54:05 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/Apis/Auth/authControllers.ts(43,3): error TS1005: ':' expected.
+
+    at Object.<anonymous> (D:\backend\maid\src\Apis\Auth\authControllers.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-7746639297775741.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-7746639297775741.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-7746639297775741.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-28 14:20:22 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/Apis/Verification/verificationModel.ts(34,9): error TS1472: 'catch' or 'finally' expected.
+src/Apis/Verification/verificationModel.ts(35,7): error TS1005: ',' expected.
+src/Apis/Verification/verificationModel.ts(38,1): error TS1128: Declaration or statement expected.
+src/Apis/Verification/verificationModel.ts(38,2): error TS1128: Declaration or statement expected.
+
+    at Object.<anonymous> (D:\backend\maid\src\Apis\Verification\verificationModel.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-9739053090832972.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-9739053090832972.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-9739053090832972.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-28 14:20:30 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/Apis/Verification/verificationModel.ts(34,9): error TS1472: 'catch' or 'finally' expected.
+src/Apis/Verification/verificationModel.ts(35,7): error TS1005: ',' expected.
+src/Apis/Verification/verificationModel.ts(38,1): error TS1128: Declaration or statement expected.
+src/Apis/Verification/verificationModel.ts(38,2): error TS1128: Declaration or statement expected.
+
+    at Object.<anonymous> (D:\backend\maid\src\Apis\Verification\verificationModel.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-9739053090832972.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-9739053090832972.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-9739053090832972.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-28 14:52:39 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/Apis/Verification/verificationController.ts(36,30): error TS1005: ',' expected.
+src/Apis/Verification/verificationController.ts(36,53): error TS1005: ',' expected.
+
+    at Object.<anonymous> (D:\backend\maid\src\Apis\Verification\verificationController.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-9739053090832972.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-9739053090832972.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-9739053090832972.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-28 14:54:23 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/Apis/Verification/verificationController.ts(38,63): error TS1135: Argument expression expected.
+src/Apis/Verification/verificationController.ts(38,64): error TS1472: 'catch' or 'finally' expected.
+src/Apis/Verification/verificationController.ts(69,10): error TS1128: Declaration or statement expected.
+src/Apis/Verification/verificationController.ts(70,5): error TS1128: Declaration or statement expected.
+src/Apis/Verification/verificationController.ts(72,1): error TS1128: Declaration or statement expected.
+
+    at Object.<anonymous> (D:\backend\maid\src\Apis\Verification\verificationController.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-9739053090832972.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-9739053090832972.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-9739053090832972.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-28 16:12:10 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/Apis/Auth/authControllers.ts(74,22): error TS1005: ',' expected.
+
+    at Object.<anonymous> (D:\backend\maid\src\Apis\Auth\authControllers.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6772733945469034.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6772733945469034.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6772733945469034.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-28 16:28:07 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/Apis/Verification/verificationController.ts(39,17): error TS1135: Argument expression expected.
+src/Apis/Verification/verificationController.ts(39,95): error TS1128: Declaration or statement expected.
+src/Apis/Verification/verificationController.ts(78,10): error TS1068: Unexpected token. A constructor, method, accessor, or property was expected.
+src/Apis/Verification/verificationController.ts(81,1): error TS1128: Declaration or statement expected.
+
+    at Object.<anonymous> (D:\backend\maid\src\Apis\Verification\verificationController.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6772733945469034.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6772733945469034.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6772733945469034.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-30 09:04:14 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/Apis/Auth/authControllers.ts(52,78): error TS1005: ',' expected.
+
+    at Object.<anonymous> (D:\backend\maid\src\Apis\Auth\authControllers.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6772733945469034.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6772733945469034.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6772733945469034.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-30 09:06:53 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/Apis/Auth/authControllers.ts(134,105): error TS1005: ',' expected.
+
+    at Object.<anonymous> (D:\backend\maid\src\Apis\Auth\authControllers.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6772733945469034.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6772733945469034.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6772733945469034.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-30 12:06:55 [ERROR]: TypeError: exports.authRouter.post(...).post(...).post(...).post(...).path is not a function
+    at Object.<anonymous> (D:\backend\maid\src\Apis\Auth\authRoute.ts:17:6)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-2490925371148538.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-2490925371148538.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-2490925371148538.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-30 12:10:16 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/Apis/Auth/authRoute.ts(17,61): error TS1135: Argument expression expected.
+
+    at Object.<anonymous> (D:\backend\maid\src\Apis\Auth\authRoute.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-2490925371148538.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-2490925371148538.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-2490925371148538.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-30 12:35:16 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/Apis/Auth/authControllers.ts(143,5): error TS1005: ':' expected.
+
+    at Object.<anonymous> (D:\backend\maid\src\Apis\Auth\authControllers.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6951125756143328.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6951125756143328.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6951125756143328.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-30 12:35:24 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/Apis/Auth/authControllers.ts(143,5): error TS1005: ':' expected.
+
+    at Object.<anonymous> (D:\backend\maid\src\Apis\Auth\authControllers.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6951125756143328.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6951125756143328.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6951125756143328.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-30 12:36:14 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/Apis/Auth/authControllers.ts(144,5): error TS1005: ':' expected.
+
+    at Object.<anonymous> (D:\backend\maid\src\Apis\Auth\authControllers.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6951125756143328.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6951125756143328.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6951125756143328.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-30 12:51:38 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/Apis/Auth/authControllers.ts(158,107): error TS1136: Property assignment expected.
+src/Apis/Auth/authControllers.ts(158,135): error TS1005: ',' expected.
+src/Apis/Auth/authControllers.ts(158,136): error TS1068: Unexpected token. A constructor, method, accessor, or property was expected.
+src/Apis/Auth/authControllers.ts(160,1): error TS1128: Declaration or statement expected.
+
+    at Object.<anonymous> (D:\backend\maid\src\Apis\Auth\authControllers.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6951125756143328.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6951125756143328.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6951125756143328.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2024-12-30 14:45:18 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/Apis/Auth/authModel.ts(104,30): error TS1005: ',' expected.
+
+    at Object.<anonymous> (D:\backend\maid\src\Apis\Auth\authModel.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (D:\backend\maid\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6951125756143328.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6951125756143328.js:114:20)
+    at require.extensions.<computed> (C:\Users\BDCALL~1\AppData\Local\Temp\ts-node-dev-hook-6951125756143328.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\backend\maid\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)

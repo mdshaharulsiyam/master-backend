@@ -10,7 +10,7 @@ const verificationSchema = new Schema<IVerification>({
     code: String,
     createdAt: {
         type: Date,
-        default: Date.now, 
+        default: Date.now,
         expires: 10100
     }
 }, { timestamps: true });
@@ -18,11 +18,22 @@ const verificationSchema = new Schema<IVerification>({
 verificationSchema.pre('save', async function (next) {
     try {
         this.code = Math.round(100000 + Math.random() * 900000).toString();
-        await sendMail.sendVerificationMail(this.email, 'email verification code', 'user', this.code);
+        sendMail.sendVerificationMail(this.email, 'email verification code', 'user', this.code);
         next();
     } catch (err) {
         next(err as CallbackError);
     }
 });
+verificationSchema.pre('findOneAndUpdate', async function (next) {
+    try {
+        const update = this.getUpdate() as { email: string, code?: string };
+        update.code = Math.round(100000 + Math.random() * 900000).toString();
+        sendMail.sendVerificationMail(update.email, 'email verification code', 'user', update.code);
+        next();
+    } catch (err) {
+        next(err as CallbackError);
+    }
+});
+
 
 export const verificationModel = model<IVerification>('verification', verificationSchema)

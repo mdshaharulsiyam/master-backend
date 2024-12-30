@@ -1,17 +1,17 @@
 import jwt, { JwtPayload } from "jsonwebtoken";
 import { Request, Response, NextFunction } from "express";
 import authModel from "../Apis/Auth/authModel";
-import config from "../DefaultConfig/config";
+import config, { HttpStatus } from "../DefaultConfig/config";
 
 interface DecodedToken extends JwtPayload {
     id?: string;
 }
 
 // Modify verifyToken to accept an array of allowed roles
-const verifyToken = (allowedRoles: string[] = [], privet: boolean = true) => {
+const verifyToken = (allowedRoles: string[] = [], privet: boolean = true, type: string = config.TOKEN_NAME) => {
     return async (req: Request, res: Response, next: NextFunction): Promise<void> => {
         try {
-            let tokenWithBearer = req.headers.authorization || req.cookies.token;
+            let tokenWithBearer = req.headers.authorization || req.cookies[type]
 
             if (!tokenWithBearer && !privet) {
                 return next();
@@ -19,7 +19,7 @@ const verifyToken = (allowedRoles: string[] = [], privet: boolean = true) => {
 
             if (!tokenWithBearer) {
                 res.status(403).send({ success: false, message: "Forbidden access" });
-                return; // Ensure we don't return the response
+                return
             }
 
             let token: string;
@@ -36,7 +36,18 @@ const verifyToken = (allowedRoles: string[] = [], privet: boolean = true) => {
                 }
 
                 const decodedToken = decoded as DecodedToken;
-                const user = await authModel.findById(decodedToken?.id);
+
+                if (type == config.ACCESS_TOKEN_NAME) {
+                    const user = await authModel.findOne({ email: decodedToken?.email });
+                    if (user && user?.accessToken == token) {
+                        req.user = user;
+                        return next();
+                    } else {
+                        return res.status(HttpStatus.NOT_FOUND).send({ success: false, message: "token missing or token has been expired" });
+                    }
+                }
+
+                const user = await authModel.findById(decodedToken.id);
 
                 if (!user) {
                     if (privet) {
@@ -48,8 +59,10 @@ const verifyToken = (allowedRoles: string[] = [], privet: boolean = true) => {
                 }
 
                 if (user.block) {
-                    res.status(401).send({ success: false, message: "You are blocked by admin" });
-                    return;
+                    return res.status(401).send({ success: false, message: "You are blocked by admin" });
+                }
+                if (!user.isVerified) {
+                    return res.status(401).send({ success: false, message: "You please verify your email" });
                 }
 
                 if (allowedRoles.length > 0 && !allowedRoles.includes(user.role)) {

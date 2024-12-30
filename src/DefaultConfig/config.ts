@@ -12,9 +12,12 @@ const config = Object.freeze({
   NODE_ENV: process.env.NODE_ENV,
   SRTIPE_KEY: process.env.SRTIPE_KEY,
   DB_NAME: process.env.DB_NAME,
+  TOKEN_NAME: process.env.TOKEN_NAME || '',
+  ACCESS_TOKEN_NAME: process.env.ACCESS_TOKEN_NAME || '',
   ADMIN: ['ADMIN', 'SUPER_ADMIN'],
   SUPER_ADMIN: ['SUPER_ADMIN'],
-  USER: ['ADMIN', 'SUPER_ADMIN', 'USER',]
+  MAID: ['ADMIN', 'SUPER_ADMIN', "MAID"],
+  USER: ['ADMIN', 'SUPER_ADMIN', "MAID", 'USER']
 });
 
 export const HttpStatus = Object.freeze({
